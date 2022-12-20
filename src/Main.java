@@ -101,7 +101,7 @@ public class Main {
         System.out.println("Максимальная зарплата: " + employees[idEmployeeOfMaxSalary(employees)].getEmployeeSalary());
     }
     public static void printEmployeeOfMaxSalary(Employee[] employees) {
-        System.out.println("Максимальная зарплата у сотрудника " + employees[idEmployeeOfMaxSalary(employees)].getNameOfEmployee());
+        System.out.println("Максимальная зарплата у сoтрудника " + employees[idEmployeeOfMaxSalary(employees)].getNameOfEmployee());
     }
     public static void printMinSalary(Employee[] employees) {
         System.out.println("Минимальная зарплата: " + employees[idEmployeeOfMinSalary(employees)].getEmployeeSalary());
