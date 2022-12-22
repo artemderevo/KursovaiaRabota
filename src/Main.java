@@ -1,3 +1,5 @@
+import javax.naming.Name;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,6 +15,7 @@ public class Main {
                 new Employee("Liza","Zueva","Dmitrievna", 3, 65000),
                 new Employee("Vladislav","Gotlib","Egorovich", 3, 58500)
         };
+
         printListOfEmployees(employees);
         printMinSalary(employees);
         printEmployeeOfMinSalary(employees);
@@ -20,6 +23,8 @@ public class Main {
         printEmployeeOfMaxSalary(employees);
         printSumSalary(employees);
         printAverageSalary(employees);
+        printFullNames(employees);
+
 
 
     }
@@ -87,6 +92,12 @@ public class Main {
             average = sum / employees.length;
         }
         return average;
+    }
+
+    private static void printFullNames(Employee[] employees) {
+        for (Employee employee : employees) {
+            System.out.println(employee.getFullName());
+        }
     }
 
 
