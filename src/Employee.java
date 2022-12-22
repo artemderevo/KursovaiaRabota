@@ -28,8 +28,7 @@ public class Employee {
         return departamentNumber == employee.departamentNumber && Double.compare(employee.employeeSalary, employeeSalary) == 0 && id == employee.id && Objects.equals(nameOfEmployee, employee.nameOfEmployee) && Objects.equals(surnameOfEmployee, employee.surnameOfEmployee) && Objects.equals(patronymicOfEmployee, employee.patronymicOfEmployee);
 
     }
-
-
+    public String getFullName () {return nameOfEmployee + " " + surnameOfEmployee+ " " + patronymicOfEmployee;}
     public String getNameOfEmployee() {return this.nameOfEmployee;}
     public String getSurnameOfEmployee() {return this.surnameOfEmployee;}
     public String getPatronymicOfEmployee() {return  this.patronymicOfEmployee;}
